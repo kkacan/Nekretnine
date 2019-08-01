@@ -1,0 +1,60 @@
+<hr>
+<h1>Kuće</h1>
+<hr>
+
+<table class="table table-hover" style="width:100%">
+
+    <tr *ngFor="let kuca_item of kuce">
+        <div class="card border-secondary mb-3">
+            <table class="table table-hover" style="width:100%">
+                <tr>
+                    <th>ID:</th>
+                    <td>{{ kuca_item.id }}</td>
+                </tr>
+                <tr>
+                    <th>Mjesto:</th>
+                    <td>{{ kuca_item.mjesto }}</td>
+                </tr>
+                <tr>
+                    <th>Adresa:</th>
+                    <td>{{ kuca_item.adresa }}</td>
+                </tr>
+                <tr>
+                    <th>Kvadratura:</th>
+                    <td>{{ kuca_item.kvadratura }}</td>
+                </tr>
+                <tr>
+                    <th>Cijena:</th>
+                    <td>{{ kuca_item.cijena }}</td>
+                </tr>
+                <tr>
+                    <th>Opis:</th>
+                    <td>{{ kuca_item.opis }}</td>
+                </tr>
+                <tr>
+                    <th>Prodavatelj:</th>
+                    <td>{{ kuca_item.ime }} {{ kuca_item.prezime }} <br>
+                        <a href="mailto:{{ kuca_item.email }}?Subject=Kuća ID {{ kuca_item.id }}"
+                            target="_blank">{{ kuca_item.email }}</a> </td>
+                </tr>
+                <tr>
+                    <th>Slike:</th>
+                    <td><img src="{{ kuca_item.slika1 ? kuca_item.slika1 : 'assets/noimage.png'}}" alt="pic1"
+                            width="180" height="100" onclick="window.open(this.src, '_self')" onmouseover=""
+                            style="cursor: pointer;">&nbsp;&nbsp;
+                        <img src="{{ kuca_item.slika2 ? kuca_item.slika2 : 'assets/noimage.png'}}" alt="pic2"
+                            width="180" height="100" onclick="window.open(this.src, '_self')" onmouseover=""
+                            style="cursor: pointer;">&nbsp;&nbsp;
+                        <img src="{{ kuca_item.slika3 ? kuca_item.slika3 : 'assets/noimage.png'}}" alt="pic3"
+                            width="180" height="100" onclick="window.open(this.src, '_self')" onmouseover=""
+                            style="cursor: pointer;">&nbsp;&nbsp;
+                        <img src="{{ kuca_item.slika4 ? kuca_item.slika4 : 'assets/noimage.png'}}" alt="pic4"
+                            width="180" height="100" onclick="window.open(this.src, '_self')" onmouseover=""
+                            style="cursor: pointer;"></td>
+                </tr>
+
+            </table>
+        </div>
+    </tr>
+
+</table>
