@@ -33,6 +33,7 @@ Back-end ove prezentacije radi preko [JSON Servera][ln2] i nalazi se [ovdje][ln3
   - Deployment
   - Bootstrap
 
+
 >Autor: Kristijan Kačan
 
 [ln1]: <https://kkacan.github.io/nekretnine-angular>
