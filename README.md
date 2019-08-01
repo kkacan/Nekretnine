@@ -18,7 +18,7 @@ Za svaku skupinu prikazuju se ovi podaci:
 - Prodavatelj - ime i prezime prodavatelja i njegova email adresa (klikom na email šalje se poruka sa id brojem nekretnine)
 - Slike
 
-Za potrebe prezentacije aplikacija je deployana na [Github Pages][ln1].
+Za potrebe prezentacije aplikacija je deployana na [GitHub Pages][ln1].
 Back-end ove prezentacije radi preko [JSON Servera][ln2] i nalazi se [ovdje][ln3].
 
 
