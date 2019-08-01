@@ -1,7 +1,7 @@
 # Nekretnine
 ##### Aplikacija za evidenciju nekretnina 
 ---
-Nekretnine je web aplikacija namjenjena agencijama koje se bave prometom nekretnina, da bi svoju ponudu predstavili potencijalnim kupcima. 
+Nekretnine je web aplikacija namjenjena agencijama koje se bave prometom nekretnina, da bi svoju ponudu predstavili potencijalnim kupcima.  
 Sastoji se od back-enda koji je rađen u Flasku, gdje se iz SQLite baze podataka izvlače podaci koji se pretvaraju u JSON format i serviraju front-end dijelu koji je izrađen u Angularu. Podaci o nekretninama se dijele na tri skupine:
 
 - Kuće
@@ -19,7 +19,7 @@ Za svaku skupinu prikazuju se ovi podaci:
 - Prodavatelj - ime i prezime prodavatelja i njegova email adresa (klikom na email šalje se poruka sa id brojem nekretnine)
 - Slike
 
-Za potrebe prezentacije aplikacija je deployana na [GitHub Pages][ln1].
+Za potrebe prezentacije aplikacija je deployana na [GitHub Pages][ln1].  
 Back-end ove prezentacije radi preko [JSON Servera][ln2] i nalazi se [ovdje][ln3].
 
 
@@ -32,9 +32,9 @@ Back-end ove prezentacije radi preko [JSON Servera][ln2] i nalazi se [ovdje][ln3
   - Predlošci
   - REST servisi
   - Deployment
-  - Bootstrap
-
-
+  - Bootstrap  
+  
+  
 >Autor: Kristijan Kačan
 
 [ln1]: <https://kkacan.github.io/nekretnine-angular>
