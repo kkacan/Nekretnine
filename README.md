@@ -1,4 +1,4 @@
-# [Nekretnine][ln1]
+# Nekretnine
 ##### Aplikacija za evidenciju nekretnina 
 ---
 Nekretnine je web aplikacija namjenjena agencijama koje se bave prometom nekretnina, da bi svoju ponudu predstavili potencijalnim kupcima. 
