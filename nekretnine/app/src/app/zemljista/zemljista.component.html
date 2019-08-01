@@ -1,0 +1,56 @@
+<hr>
+<h1>Zemljišta</h1>
+<hr>
+
+<table class="table table-hover" style="width:100%">
+
+    <tr *ngFor="let zemljiste_item of zemljista">
+        <div class="card border-secondary mb-3">
+            <table class="table table-hover" style="width:100%">
+                <tr>
+                    <th>ID:</th>
+                    <td>{{ zemljiste_item.id }}</td>
+                </tr>
+                <tr>
+                    <th>Mjesto:</th>
+                    <td>{{ zemljiste_item.mjesto }}</td>
+                </tr>
+                <tr>
+                    <th>Adresa:</th>
+                    <td>{{ zemljiste_item.adresa }}</td>
+                </tr>
+                <tr>
+                    <th>Kvadratura:</th>
+                    <td>{{ zemljiste_item.kvadratura }}</td>
+                </tr>
+                <tr>
+                    <th>Cijena:</th>
+                    <td>{{ zemljiste_item.cijena }}</td>
+                </tr>
+
+                <tr>
+                    <th>Prodavatelj:</th>
+                    <td>{{ zemljiste_item.ime }} {{ zemljiste_item.prezime }} <br>
+                        <a href="mailto:{{ zemljiste_item.email }}?Subject=Kuća ID {{ zemljiste_item.id }}"
+                            target="_blank">{{ zemljiste_item.email }}</a> </td>
+                </tr>
+                <tr>
+                    <th>Slike:</th>
+                    <td><img src="{{ zemljiste_item.slika1 ? zemljiste_item.slika1 : 'assets/noimage.png'}}" alt="pic1"
+                            width="180" height="100" onclick="window.open(this.src, '_self')" onmouseover=""
+                            style="cursor: pointer;">&nbsp;&nbsp;
+                        <img src="{{ zemljiste_item.slika2 ? zemljiste_item.slika2 : 'assets/noimage.png'}}" alt="pic2"
+                            width="180" height="100" onclick="window.open(this.src, '_self')" onmouseover=""
+                            style="cursor: pointer;">&nbsp;&nbsp;
+                        <img src="{{ zemljiste_item.slika3 ? zemljiste_item.slika3 : 'assets/noimage.png'}}" alt="pic3"
+                            width="180" height="100" onclick="window.open(this.src, '_self')" onmouseover=""
+                            style="cursor: pointer;">&nbsp;&nbsp;
+                        <img src="{{ zemljiste_item.slika4 ? zemljiste_item.slika4 : 'assets/noimage.png'}}" alt="pic4"
+                            width="180" height="100" onclick="window.open(this.src, '_self')" onmouseover=""
+                            style="cursor: pointer;"></td>
+                </tr>
+            </table>
+        </div>
+    </tr>
+
+</table>
