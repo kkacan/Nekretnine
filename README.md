@@ -1,5 +1,5 @@
 # Nekretnine
-##### Aplikacija za evidenciju nekretnina 
+##### Aplikacija za evidenciju nekretnina  
 ---
 Nekretnine je web aplikacija namjenjena agencijama koje se bave prometom nekretnina, da bi svoju ponudu predstavili potencijalnim kupcima.  
 Sastoji se od REST servisa koji je izrađen u Flask Web Frameworku, gdje se iz SQLite baze podataka izvlače podaci koji se pretvaraju u JSON format i serviraju front-end dijelu koji je izrađen u Angularu.  
